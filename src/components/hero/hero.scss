@@ -1,0 +1,88 @@
+@import "@/assets/variables/color.scss";
+@import "@/assets/variables/variables";
+
+
+.hero {
+  width: 100%;
+  padding: 100px 0;
+  background-color: $gablegreen;
+  color: $mystic;
+
+  @media (max-width: 834px) {
+    padding: 50px 0;
+  }
+
+  @media (max-width: 834px) {
+    padding: 30px 0 50px 0;
+  }
+
+  &__wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: calc($step4x * 2);
+
+    @media (max-width: 834px) {
+      flex-direction: column;
+      row-gap: calc($step2x * 6.5);
+    }
+
+    &-left {
+      width: 45%;
+
+      @media (max-width: 834px) {
+        width: 100%;
+      }
+    }
+
+    &-right {
+      position: relative;
+
+      img {
+        width: 100%;
+        max-width: 478px;
+      }
+
+      .inside {
+        width: 45%;
+        position: absolute;
+        bottom: -35px;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 60px;
+        background-color: $mystic;
+        border-radius: $mainradius;
+
+
+        @media (max-width: 834px) {
+          padding: 20px 35px;
+        }
+
+        span {
+          display: block;
+          width: 80%;
+          height: 8px;
+          margin-bottom: $step4x;
+          background-color: silver;
+
+          @media (max-width: 375px) {
+            margin-bottom: $step2x;
+          }
+        }
+
+        .first {
+          width: 140px;
+
+          @media (max-width: 375px) {
+            width: 100px;
+          }
+        }
+      }
+
+    }
+  }
+}

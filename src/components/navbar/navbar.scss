@@ -1,0 +1,74 @@
+@import "@/assets/variables/color.scss";
+@import "@/assets/variables/variables";
+
+
+.navbar {
+  width: 100%;
+  padding: 24px 0;
+  background-color: $gablegreen;
+  color: $mystic;
+  box-shadow: 0 20px 0 0 $gablegreen;
+
+  @media (max-width: 610px) {
+    padding: 17px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: calc($step4x * 2);
+
+    @media (max-width: 834px) {
+      column-gap: $step4x;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: calc($step4x * 2);
+      font-size: calc($step4x);
+      font-weight: 400;
+
+      @media (max-width: 834px) {
+        column-gap: $step4x;
+      }
+
+      li {
+        @media (max-width: 610px) {
+          display: none;
+        }
+      }
+
+    }
+
+    &-menuBtn {
+      @media (min-width: 611px) {
+        display: none;
+      }
+    }
+
+    &-menu{
+      width: 100%;
+      height: 100vh;
+      background-color: $gablegreen;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      gap: calc($step4x * 2);
+      font-size: calc($step4x);
+      font-weight: 400;
+
+      ul > li {
+        @media (max-width: 610px) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-mobile {
+
+  }
+}

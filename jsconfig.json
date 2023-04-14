@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*",
+        "./dist/*",
+        ""
+      ],
+      "public/*": [
+        "public/*"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

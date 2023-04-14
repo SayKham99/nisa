@@ -1,0 +1,70 @@
+@import "@/assets/variables/color.scss";
+@import "@/assets/variables/variables";
+
+
+.discover {
+  margin-top: $step10x;
+  width: 100%;
+  padding: 100px 0;
+  background-color: $smoke;
+  box-sizing: border-box;
+
+  @media (max-width: 834px) {
+    padding: 50px 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: calc($step5x * 2.5);
+
+    @media (max-width: 834px) {
+      flex-direction: column;
+      row-gap: calc($step2x * 6.5);
+    }
+
+    &-left {
+      width: 45%;
+      position: relative;
+
+      @media (max-width: 834px) {
+        position: static;
+        width: 55%;
+      }
+
+      img {
+        width: 100%;
+        max-width: 382px;
+      }
+
+      .top-left, .bottom-right {
+        position: absolute;
+
+        @media (max-width: 834px) {
+          display: none;
+        }
+      }
+
+      .top-left {
+        top: -50px;
+        left: -60px;
+      }
+
+      .bottom-right {
+        bottom: -35px;
+        right: -50px;
+      }
+
+    }
+
+    &-right {
+      width: 50%;
+
+      @media (max-width: 834px) {
+        width: 100%;
+      }
+    }
+  }
+}

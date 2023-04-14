@@ -1,0 +1,31 @@
+{
+  "name": "nisa",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cmp": "generate-react component",
+    "srv": "generate-react component --type=services",
+    "pgs": "generate-react component --type=pages"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "prettier": "^2.8.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0",
+    "swiper": "^9.1.1",
+    "swr": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "generate-react-cli": "^8.3.0",
+    "sass": "^1.60.0",
+    "vite": "^4.2.0"
+  }
+}

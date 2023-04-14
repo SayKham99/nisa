@@ -1,0 +1,24 @@
+{
+  "navigation": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "Pricing",
+      "path": "/"
+    },
+    {
+      "name": "About",
+      "path": "/"
+    },
+    {
+      "name": "Blog",
+      "path": "/"
+    },
+    {
+      "name": "Contact",
+      "path": "/"
+    }
+  ]
+}

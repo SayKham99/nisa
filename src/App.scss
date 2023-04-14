@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "@/assets/variables/color.scss";
+@import "@/assets/variables/variables";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+h1 {
+  font-size: calc($step2x * 7);
+  font-weight: 900;
+  margin-bottom: $step10x;
+  line-height: calc($step10x * 1.6);
+
+  @media (max-width: 834px) {
+    font-size: calc($step2x * 6);
+    line-height: calc($step10x * 1.4);
+    margin-bottom: calc($step3x * 2)
+  }
+
+  @media (max-width: 375px) {
+    font-size: calc($step2x * 5);
+    line-height: calc($step10x * 1.2);
+    margin-bottom: $step4x
+  }
+}
+
+h2 {
+  text-align: center;
+  font-size: $step10x;
+  font-weight: 900;
+  color: $gablegreen;
+  margin-bottom: $step4x;
+
+  @media (max-width: 375px) {
+    font-size: $step5x;
+    margin-bottom: $step2x;
+  }
+}
+
+h4 {
+  font-size: $step4x;
+  line-height: calc($step4x * 1.6);
+  margin-bottom: $step10x;
+
+  @media (max-width: 834px) {
+    margin-bottom: calc($step3x * 2);
+  }
+
+  @media (max-width: 375px) {
+    margin-bottom: $step3x;
+  }
+}
